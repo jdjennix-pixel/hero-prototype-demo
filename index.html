@@ -13,10 +13,9 @@
 
     <!-- Texture Overlays -->
     <div class="fixed inset-0 pointer-events-none z-[9999] opacity-[0.25] mix-blend-multiply" style="background-image: url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E&quot;);"></div>
-    <div class="fixed inset-0 pointer-events-none z-[9998] opacity-[0.06]" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 28px, #0d1512 28px, #0d1512 30px);"></div>
 
     <!-- ★ WHITE HEADER ★ -->
-    <nav class="w-full flex justify-between items-center px-6 py-3 lg:px-12 relative z-50 bg-white shadow-[0_4px_0px_#fb57b6]">
+    <nav class="w-full flex justify-between items-center px-6 py-3 lg:px-12 relative z-50 bg-white border-b-4 border-[#0d1512] shadow-[0_4px_0px_#fb57b6]">
         <div style="visibility: hidden;" data-anim="nav" class="hover:scale-105 transition-transform cursor-pointer">
             <img src="./logo.png" alt="GANG Logo" class="h-10 md:h-14 w-auto object-contain drop-shadow-[3px_3px_0px_#0d1512]">
         </div>
@@ -25,6 +24,7 @@
                 Products <iconify-icon icon="solar:alt-arrow-down-linear" class="w-4 h-4"></iconify-icon>
             </a>
             <a href="#" class="text-[#0d1512] hover:text-[#fb57b6] transition-colors">Vibes</a>
+            <a href="#" class="text-[#0d1512] hover:text-[#fb57b6] transition-colors">Our Story</a>
         </div>
         <div class="flex items-center gap-4" style="visibility: hidden;" data-anim="nav">
             <button class="hidden md:block text-[#0d1512] hover:text-[#fb57b6] hover:scale-110 transition-all">
@@ -46,8 +46,9 @@
     <div id="mobile-menu" class="fixed inset-0 z-[100] bg-[#0d1512] flex flex-col items-center justify-center gap-6 transition-transform duration-500 ease-in-out translate-y-[-100%] lg:hidden">
         <button class="absolute top-5 right-6 text-white text-3xl hover:text-[#fb57b6] transition-colors" onclick="document.getElementById('mobile-menu').classList.add('translate-y-[-100%]')">✕</button>
         <img src="./logo.png" alt="GANG" class="h-14 mb-4 drop-shadow-[3px_3px_0px_#fb57b6]">
-        <a href="#products" class="text-[#f9ee1a] font-['Archivo_Black',_sans-serif] text-2xl uppercase tracking-wider hover:text-[#fb57b6] transition-colors" onclick="document.getElementById('mobile-menu').classList.add('translate-y-[-100%]')">Products</a>
+        <a href="#" class="text-[#f9ee1a] font-['Archivo_Black',_sans-serif] text-2xl uppercase tracking-wider hover:text-[#fb57b6] transition-colors" onclick="document.getElementById('mobile-menu').classList.add('translate-y-[-100%]')">Products</a>
         <a href="#" class="text-[#34f0be] font-['Archivo_Black',_sans-serif] text-2xl uppercase tracking-wider hover:text-[#fb57b6] transition-colors" onclick="document.getElementById('mobile-menu').classList.add('translate-y-[-100%]')">Vibes</a>
+        <a href="#" class="text-white font-['Archivo_Black',_sans-serif] text-2xl uppercase tracking-wider hover:text-[#fb57b6] transition-colors" onclick="document.getElementById('mobile-menu').classList.add('translate-y-[-100%]')">Our Story</a>
         <a href="#" class="text-white font-['Archivo_Black',_sans-serif] text-2xl uppercase tracking-wider hover:text-[#fb57b6] transition-colors" onclick="document.getElementById('mobile-menu').classList.add('translate-y-[-100%]')">FAQ</a>
         <div class="mt-4">
             <button class="bg-[#f9ee1a] border-3 border-white text-[#0d1512] px-10 py-3 font-['Archivo_Black',_sans-serif] text-lg uppercase tracking-wider rounded-full shadow-[5px_5px_0px_#fb57b6] hover:translate-x-1 hover:translate-y-1 hover:shadow-[2px_2px_0px_#fb57b6] transition-all" onclick="document.getElementById('mobile-menu').classList.add('translate-y-[-100%]')">
